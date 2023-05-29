@@ -1,4 +1,4 @@
-<h1>App_SetorShare</‼h1>
+<h1>App_SetorShare</h1>
 
 > Status: Projeto em Desenvolvimento ⚠️
 
