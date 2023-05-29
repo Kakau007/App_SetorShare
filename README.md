@@ -13,7 +13,7 @@ O SetorShare é um aplicativo inovador projetado para facilitar o compartilhamen
 - [CarouselView](https://github.com/sayyam/carouselview): Biblioteca para exibição de carrosséis de imagens.
   - Versão: 0.1.5
 
-## Esboço do Layout em Alta Fidelidade (Versão Inicial)
+### Esboço do Layout em Alta Fidelidade (Versão Inicial)
 
 O SetorShare foi desenvolvido com base em um esboço inicial em alta fidelidade. Tenha em mente que o design, as funcionalidades e a aparência do aplicativo podem ter evoluído desde então.
 
