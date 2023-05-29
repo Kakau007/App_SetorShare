@@ -13,13 +13,16 @@ O SetorShare é um aplicativo inovador projetado para facilitar o compartilhamen
 - [CarouselView](https://github.com/sayyam/carouselview): Biblioteca para exibição de carrosséis de imagens.
   - Versão: 0.1.5
 
-### Esboço do primeiro layout em alta fidelidade do projeto (Versão inicial)
+## Esboço do Layout em Alta Fidelidade (Versão Inicial)
 
-Este é o primeiro esboço em alta fidelidade do SetorShare, que foi desenvolvido como parte de uma aula na faculdade. Por favor, esteja ciente de que o projeto passou por alterações significativas durante o seu desenvolvimento.
+O SetorShare foi desenvolvido com base em um esboço inicial em alta fidelidade. Tenha em mente que o design, as funcionalidades e a aparência do aplicativo podem ter evoluído desde então.
 
-Para visualizar o design completo e detalhado dessa versão inicial do SetorShare, incluindo todas as telas e elementos de interface, você pode acessar o projeto no Figma [aqui](https://www.figma.com/file/xTYVIMQ5oblGzLNFRwGM3E/Projeto_Almox_Kau%C3%A3?type=design&node-id=0-1&t=JRXm61IHqq8qjSb2-0).
+Para visualizar o esboço completo dessa versão inicial do SetorShare, incluindo todas as telas e elementos de interface, acesse o projeto no Figma [aqui](https://www.figma.com/file/xTYVIMQ5oblGzLNFRwGM3E/Projeto_Almox_Kau%C3%A3?type=design&node-id=0-1&t=JRXm61IHqq8qjSb2-0).
 
-No projeto do Figma, você encontrará o esboço original que serviu como ponto de partida para o desenvolvimento posterior. Lembre-se de que o design, as funcionalidades e a aparência do aplicativo podem ter evoluído desde então.
+No projeto do Figma, você encontrará o esboço original que serviu como ponto de partida para o desenvolvimento posterior.
+
+Lembre-se de que o design do aplicativo pode ter sido atualizado e aprimorado desde essa versão inicial.
+
 
 ## Como executar o projeto
 
