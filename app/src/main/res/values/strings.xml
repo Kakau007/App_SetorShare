@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">StockRotativo</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Almoxarifados</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_meus_pedidos">MeusPedidosActivity</string>
+
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="first_fragment_label">Meus Pedidos</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        teste
+        </string>
+
+
+    <string-array name="categoria">
+        <item>Bebidas</item>
+        <item>Luvas</item>
+        <item>Calçados</item>
+        <item>Vestuário</item>
+        <item>Ferramentas</item>
+        <item>Materiais de Escritório</item>
+        <item>Utensílios Descartáveis</item>
+        <item>Utensílios de Limpeza</item>
+        <item>Peças e Componentes Específicos</item>
+    </string-array>
+
+    <string-array name="setor">
+        <item>Agrícola</item>
+        <item>Central</item>
+        <item>Fazenda Riachão</item>
+    </string-array>
+
+
+</resources>
