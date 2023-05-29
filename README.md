@@ -6,15 +6,13 @@
 * SetorShare é um aplicativo inovador projetado para facilitar o compartilhamento de recursos e mercadorias entre setores de uma organização.
 
 ### Dependências de Terceiros Utilizadas
-<table>
-  <tr>
-   <a href = "https://github.com/square/picasso" <td>Picasso</td>  </a>
-   <a href = "https://github.com/sayyam/carouselview"  <td>CarouselView</> </a>
-      <tr>
-    <td>2.8</td>
-    <td>0.1.5</td>
-    </tr>
-</table>
+
+ <a href = "https://github.com/square/picasso" Picasso </a> - Biblioteca para carregamento e exibição de imagens.
+Versão: 2.8
+
+ <a href = "https://github.com/sayyam/carouselview" CarouselView </a> - Biblioteca para exibição de carrosséis de imagens.
+Versão: 0.1.5
+
 
 ### Esboço do primeiro layout em alta fidelidade do projeto
 
