@@ -7,10 +7,10 @@
 
 ### Dependências de Terceiros Utilizadas
 
- <a href = "https://github.com/square/picasso" Picasso </a> - Biblioteca para carregamento e exibição de imagens.
+ <a href = "https://github.com/square/picasso"> Picasso </a> - Biblioteca para carregamento e exibição de imagens.
 Versão: 2.8
 
- <a href = "https://github.com/sayyam/carouselview" CarouselView </a> - Biblioteca para exibição de carrosséis de imagens.
+ <a href = "https://github.com/sayyam/carouselview"> CarouselView </a> - Biblioteca para exibição de carrosséis de imagens.
 Versão: 0.1.5
 
 
