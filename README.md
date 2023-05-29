@@ -1,35 +1,21 @@
-# App_SetorShare
+<h1>App_SetorShare</‼h1>
 
-![Logo do SetorShare](logo.png)
+> Status: Projeto em Desenvolvimento ⚠️
 
-SetorShare é um aplicativo inovador projetado para facilitar o compartilhamento de recursos e mercadorias entre setores de uma organização. Com uma interface intuitiva e amigável, o SetorShare permite que os diferentes setores solicitem e forneçam mercadorias de forma eficiente e transparente.
+### Sobre o Aplicativo 
+* SetorShare é um aplicativo inovador projetado para facilitar o compartilhamento de recursos e mercadorias entre setores de uma organização. Com uma interface intuitiva e amigável, o SetorShare permite que os diferentes setores solicitem e forneçam mercadorias de forma eficiente e transparente.
 
-## Capturas de tela
 
-Aqui estão algumas capturas de tela do aplicativo SetorShare:
 
-![Tela de Login](screenshots/login.png)
-*Figura 1: Tela de Login*
+### Dependências de Terceiros que Foram Utilizadas 
 
-![Tela de Solicitação](screenshots/solicitacao.png)
-*Figura 2: Tela de Solicitação de Mercadoria*
 
-![Tela de Ofertas](screenshots/ofertas.png)
-*Figura 3: Tela de Ofertas de Mercadoria*
+- Picasso: Biblioteca para carregamento e exibição de imagens.
+- CarouselView: Biblioteca para Android que permite criar e exibir carrosséis de imagens de forma fácil e personalizável.
 
-## Dependências
+### Esboço do primeiro layout em alta fidelidade do projeto
 
-O SetorShare foi desenvolvido utilizando as seguintes dependências:
-
-- Retrofit 2.0: Biblioteca para requisições HTTP
-- Gson: Biblioteca para serialização e desserialização de objetos JSON
-- Picasso: Biblioteca para carregamento e exibição de imagens
-- RecyclerView: Componente de interface do usuário para exibir listas de dados
-- Material Design: Biblioteca para implementar o design de acordo com as diretrizes do Material Design
-
-## Design de Alta Fidelidade
-
-Para visualizar o design do SetorShare em alta fidelidade, você pode acessar o projeto no Figma [aqui](link_para_o_projeto_figma).
+Para visualizar o design do SetorShare em alta fidelidade, você pode acessar o projeto no Figma [aqui]([link_para_o_projeto_figma](https://www.figma.com/file/xTYVIMQ5oblGzLNFRwGM3E/Projeto_Almox_Kau%C3%A3?type=design&node-id=0-1&t=JRXm61IHqq8qjSb2-0)).
 
 ## Como executar o projeto
 
@@ -48,6 +34,3 @@ Certifique-se de ter o Android Studio configurado corretamente e todas as depend
 
 Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões para melhorar o SetorShare, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
