@@ -15,23 +15,12 @@ O SetorShare foi desenvolvido com base em um esboço inicial em alta fidelidade.
 
 Para visualizar o esboço completo dessa versão inicial do SetorShare, incluindo todas as telas e elementos de interface, acesse o projeto no Figma [aqui](https://www.figma.com/file/xTYVIMQ5oblGzLNFRwGM3E/Projeto_Almox_Kau%C3%A3?type=design&node-id=0-1&t=JRXm61IHqq8qjSb2-0).
 
+## Layout do Aplicativo (Versão Atual)
+
 <div align="center">
-  <img src="https://github.com/Kakau007/App_SetorShare/blob/master/imagens%20do%20app/tela%20ap%C3%B3s%20fazer%20login.png?raw=true" alt="Tela inicial do aplicativo" width="300">
-  <p align="center">Tela inicial do aplicativo</p>
+  <img src="https://github.com/KrodrigoDev/App_SetorShare/blob/master/Imagens%20do%20app/Tela%20Principal%20ap%C3%B3s%20o%20login.png?raw=true" alt="Tela inicial do aplicativo" width="300">
+  <p align="center">Tela inicial do aplicativo após fazer login</p>
 </div>
-
-## Como executar o projeto
-
-Para executar o projeto SetorShare no Android Studio, siga as etapas abaixo:
-
-1. Clone este repositório: `git clone https://github.com/seu-usuario/App_SetorShare.git`
-2. Abra o Android Studio e selecione "Open an existing project".
-3. Navegue até a pasta do projeto clonado e selecione o arquivo `build.gradle`.
-4. Aguarde a sincronização do projeto e a instalação das dependências.
-5. Conecte um dispositivo Android ou inicie um emulador.
-6. Clique em "Run" para instalar e executar o aplicativo no dispositivo/emulador selecionado.
-
-Certifique-se de ter o Android Studio configurado corretamente e todas as dependências necessárias instaladas antes de executar o projeto.
 
 ## Contribuição
 
