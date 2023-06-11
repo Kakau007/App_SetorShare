@@ -39,6 +39,8 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
     private Pedido pedidoSelecionado;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +59,7 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
             codigo.setText(pedidoSelecionado.getCodigo());
             setor.setText(pedidoSelecionado.getSetor());
             descricao.setText(pedidoSelecionado.getDescricao());
+
 
             ImageListener imageListener = new ImageListener() {
                 @Override
@@ -84,7 +87,7 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
     }
 
     public void visualizarNumeroWhatsApp(View view) {
-        String numeroTelefone = "821565842"; // Substitua pelo número de telefone desejado
+        String numeroTelefone = "82991305810"; // Substitua pelo número de telefone desejado
         String mensagem = "Olá! Este é um teste do mais novo aplicativo desenvolvido por Kauã Rodrigo de Lima Barbosa"; // Mensagem pré-definida
 
         // Verifica se o WhatsApp está instalado no dispositivo
@@ -115,6 +118,7 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
         codigo = findViewById(R.id.textCodigoDetalhes);
         setor = findViewById(R.id.textSetorDetalhes);
         descricao = findViewById(R.id.textDescricaoDetalhes);
+
 
     }
 

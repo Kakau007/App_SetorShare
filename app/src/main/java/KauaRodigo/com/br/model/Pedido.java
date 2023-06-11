@@ -16,6 +16,9 @@ public class Pedido implements Serializable {
     private String codigo;
     private String quantidade;
     private String descricao;
+
+    private String data;
+
     private List<String> fotos;
 
 
@@ -146,4 +149,14 @@ public class Pedido implements Serializable {
     public void setFotos(List<String> fotos) {
         this.fotos = fotos;
     }
+
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
 }

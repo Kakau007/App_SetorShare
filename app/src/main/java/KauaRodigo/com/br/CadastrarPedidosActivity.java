@@ -28,6 +28,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageMetadata;
 import com.google.firebase.storage.StorageReference;
@@ -81,6 +82,24 @@ public class CadastrarPedidosActivity extends AppCompatActivity implements View.
 
         inicializarComponentes();
         carregarDadosSpinner();
+
+
+        // configurações para notificação
+
+        FirebaseMessaging.getInstance().getToken()
+                .addOnCompleteListener(new OnCompleteListener<String>() {
+                    @Override
+                    public void onComplete(@NonNull Task<String> task) {
+                        if (!task.isSuccessful()) {
+                            return;
+                        }
+
+                        String token = task.getResult();
+                        System.out.println("TOKEN " + token);
+
+                    }
+                });
+
 
     }
 
@@ -157,6 +176,7 @@ public class CadastrarPedidosActivity extends AppCompatActivity implements View.
         String quantidade = campoQuanti.getText().toString();
         String descricao = campoDesc.getText().toString();
 
+
         Pedido pedido = new Pedido();
         pedido.setSetor(setor);
         pedido.setCategoria(categoria);
@@ -164,6 +184,7 @@ public class CadastrarPedidosActivity extends AppCompatActivity implements View.
         pedido.setCodigo(codigo);
         pedido.setQuantidade(quantidade);
         pedido.setDescricao(descricao);
+
 
 
         return pedido;
@@ -185,7 +206,8 @@ public class CadastrarPedidosActivity extends AppCompatActivity implements View.
                             if(!pedido.getQuantidade().isEmpty()){
                                 if(!pedido.getDescricao().isEmpty()){
 
-                                    salvarPedido();
+                                        salvarPedido();
+
 
                                 } else {
 
@@ -286,6 +308,7 @@ public class CadastrarPedidosActivity extends AppCompatActivity implements View.
         campoCategoria = findViewById(R.id.spinnerCategoria);
 
 
+
         imagem1.setOnClickListener(this);
         imagem2.setOnClickListener(this);
 
@@ -339,6 +362,7 @@ public class CadastrarPedidosActivity extends AppCompatActivity implements View.
         dialog.show();
 
     }
+
 
 
 }
