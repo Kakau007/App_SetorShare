@@ -15,7 +15,7 @@ O SetorShare foi desenvolvido com base em um esboço inicial em alta fidelidade.
 
 Para visualizar o esboço completo dessa versão inicial do SetorShare, incluindo todas as telas e elementos de interface, acesse o projeto no Figma [aqui](https://www.figma.com/file/xTYVIMQ5oblGzLNFRwGM3E/Projeto_Almox_Kau%C3%A3?type=design&node-id=0-1&t=JRXm61IHqq8qjSb2-0).
 
-## Layout do Aplicativo (Versão Atual)
+### Layout do Aplicativo (Versão Atual)
 
 <div align="center">
   <img src="https://github.com/KrodrigoDev/App_SetorShare/blob/master/Imagens%20do%20app/Tela%20Principal%20ap%C3%B3s%20o%20login.png?raw=true" alt="Tela inicial do aplicativo" width="300">
