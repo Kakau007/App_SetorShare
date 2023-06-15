@@ -18,6 +18,8 @@ import com.synnapps.carouselview.ImageListener;
 import org.w3c.dom.Text;
 
 import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import KauaRodigo.com.br.model.Pedido;
 
@@ -66,7 +68,9 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
                 public void setImageForPosition(int position, ImageView imageView) {
 
                     String urlString = pedidoSelecionado.getFotos().get(position);
-                    Picasso.get().load(urlString).into(imageView);
+                             Picasso.get()
+                            .load(urlString)
+                            .into(imageView);
                 }
             };
 
@@ -107,6 +111,57 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+    public void abrirEmailNoGmail(View view) {
+        String emailDestino = "kauanrodrigoo25@gmail.com"; // Endereço de e-mail de destino
+        String assuntoBase = "Compartilhamento entre setores ";
+
+        // Obter a data atual
+        Date dataAtual = new Date();
+
+        // Formatar a data no formato desejado
+        SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
+        String dataFormatada = formatoData.format(dataAtual);
+
+        // Concatenar o assunto base com a data formatada
+        String assunto = assuntoBase + dataFormatada;
+
+        // Extrair informações do pedido
+        String setorSolicitante = pedidoSelecionado.getSetor();
+        String quantidade = pedidoSelecionado.getQuantidade();
+        String codigoMaterial = pedidoSelecionado.getCodigo();
+
+        // Montar o corpo do e-mail
+        StringBuilder corpo = new StringBuilder();
+        corpo.append("Olá,\n\n");
+        corpo.append("Este e-mail é um registro da solicitação realizada na data ").append(dataFormatada).append(".\n\n");
+        corpo.append("Setor Solicitante: ").append(setorSolicitante).append("\n");
+        corpo.append("Quantidade: ").append(quantidade).append("\n");
+        corpo.append("Código do Material: ").append(codigoMaterial).append("\n\n");
+        corpo.append("Atenciosamente,\nSetorShare\n\n");
+        corpo.append("Desenvolvido por Kauã Rodrigo");
+
+
+
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{emailDestino});
+        intent.putExtra(Intent.EXTRA_SUBJECT, assunto);
+        intent.putExtra(Intent.EXTRA_TEXT, corpo.toString());
+
+        PackageManager packageManager = getPackageManager();
+        if (intent.resolveActivity(packageManager) != null) {
+            startActivity(intent);
+        } else {
+            // O aplicativo do Gmail não está instalado, trate o caso adequadamente
+            Toast.makeText(this, "O aplicativo do Gmail não está instalado", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+
+
 
 
 
