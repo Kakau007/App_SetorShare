@@ -133,7 +133,7 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
 
         // Montar o corpo do e-mail
         StringBuilder corpo = new StringBuilder();
-        corpo.append("Olá,\n\n");
+        corpo.append("Olá, tudo bem?\n\n");
         corpo.append("Este e-mail é um registro da solicitação realizada na data ").append(dataFormatada).append(".\n\n");
         corpo.append("Setor Solicitante: ").append(setorSolicitante).append("\n");
         corpo.append("Quantidade: ").append(quantidade).append("\n");

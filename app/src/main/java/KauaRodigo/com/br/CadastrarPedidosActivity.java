@@ -11,6 +11,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -34,6 +35,7 @@ import com.google.firebase.storage.StorageMetadata;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,6 +46,9 @@ import KauaRodigo.com.br.model.Pedido;
 import dmax.dialog.SpotsDialog;
 
 public class CadastrarPedidosActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private static final int REQUEST_IMAGE_GALLERY = 1;
+    private static final int REQUEST_IMAGE_CAMERA = 2;
 
     private EditText campoNome, campoCod, campoQuanti, campoDesc;
     private Button bntFazerPedido;
@@ -259,40 +264,73 @@ public class CadastrarPedidosActivity extends AppCompatActivity implements View.
     public void onClick(View v) {
         int viewId = v.getId();
         if (viewId == R.id.imagePedido1) {
-
-            escolherImagem(1);
-
+            escolherImagem();
         } else if (viewId == R.id.imagePedido2) {
-
-            escolherImagem(2);
+            escolherImagem();
         }
     }
 
-    public void escolherImagem(int requestCode){
-        Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(i, requestCode);
+    public void escolherImagem() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Escolher imagem de");
+        builder.setItems(new CharSequence[]{"Galeria", "Câmera"}, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if (which == 0) {
+                    if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                        startActivityForResult(intent, REQUEST_IMAGE_GALLERY);
+                    } else {
+                        // Solicitar permissão para acessar a galeria de imagens
+                        requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_IMAGE_GALLERY);
+                    }
+                } else {
+                    if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        startActivityForResult(intent, REQUEST_IMAGE_CAMERA);
+                    } else {
+                        // Solicitar permissão para usar a câmera
+                        requestPermissions(new String[]{Manifest.permission.CAMERA}, REQUEST_IMAGE_CAMERA);
+                    }
+                }
+            }
+        });
+        builder.show();
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(resultCode == Activity.RESULT_OK){
-
-            //Recuperar imagem
-            Uri imagemSelecionada = data.getData();
-            String caminhoImagem = imagemSelecionada.toString();
-
-            // COnfigura m no ImageView
-            if( requestCode == 1){
-                imagem1.setImageURI( imagemSelecionada );
-            } else if (requestCode == 2) {
-                imagem2.setImageURI( imagemSelecionada );
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == REQUEST_IMAGE_GALLERY) {
+                Uri imagemSelecionada = data.getData();
+                String caminhoImagem = imagemSelecionada.toString();
+                adicionarImagemPedido(caminhoImagem);
+            } else if (requestCode == REQUEST_IMAGE_CAMERA) {
+                Bitmap imagemCapturada = (Bitmap) data.getExtras().get("data");
+                Uri imagemUri = getImageUri(imagemCapturada);
+                String caminhoImagem = imagemUri.toString();
+                adicionarImagemPedido(caminhoImagem);
             }
-
-            ListaFotosRecuperadas.add(caminhoImagem);
-
         }
+    }
+
+    private void adicionarImagemPedido(String caminhoImagem) {
+        if (ListaFotosRecuperadas.size() < 2) {
+            ListaFotosRecuperadas.add(caminhoImagem);
+            ImageView imageView = ListaFotosRecuperadas.size() == 1 ? imagem1 : imagem2;
+            imageView.setImageURI(Uri.parse(caminhoImagem));
+        } else {
+            Toast.makeText(this, "Número máximo de fotos atingido", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private Uri getImageUri(Bitmap bitmap) {
+        ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
+        String path = MediaStore.Images.Media.insertImage(getContentResolver(), bitmap, "Title", null);
+        return Uri.parse(path);
     }
 
     public void inicializarComponentes(){
@@ -338,10 +376,19 @@ public class CadastrarPedidosActivity extends AppCompatActivity implements View.
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        for( int permissaoResultado : grantResults){
-
-            if(permissaoResultado == PackageManager.PERMISSION_DENIED){
-                    alertaValidacaoPermissao();
+        if (requestCode == REQUEST_IMAGE_GALLERY) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(intent, REQUEST_IMAGE_GALLERY);
+            } else {
+                Toast.makeText(this, "Permissão de acesso à galeria negada", Toast.LENGTH_SHORT).show();
+            }
+        } else if (requestCode == REQUEST_IMAGE_CAMERA) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent, REQUEST_IMAGE_CAMERA);
+            } else {
+                Toast.makeText(this, "Permissão da câmera foi negada", Toast.LENGTH_SHORT).show();
             }
         }
     }

@@ -40,8 +40,8 @@
             android:id="@+id/carouselView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
             app:fillColor="#FFFFFFFF"
             app:pageColor="#00000000"
@@ -53,6 +53,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
             android:orientation="horizontal"
             android:padding="8dp">
 
@@ -79,6 +82,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
             android:orientation="horizontal"
             android:padding="8dp">
 
@@ -105,6 +111,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
             android:orientation="horizontal"
             android:padding="8dp">
 
@@ -133,6 +142,7 @@
             android:id="@+id/divider2"
             android:layout_width="match_parent"
             android:layout_height="2dp"
+            android:layout_marginTop="10dp"
             android:background="?android:attr/listDivider"
             android:backgroundTint="#B9B9B9" />
 
@@ -140,6 +150,8 @@
             android:id="@+id/textSetorDetalhes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:drawableLeft="@drawable/baseline_location_on_24"
             android:padding="8dp"
             android:text="Setor" />
@@ -154,6 +166,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
             android:orientation="horizontal"
             android:padding="8dp">
 
@@ -181,7 +196,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="5dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
