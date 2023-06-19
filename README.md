@@ -1,6 +1,4 @@
-# SetorShare
-
-> Status: em desenvolvimento ⚠️     
+# SetorShare    
 
 ## Sobre o Aplicativo 📲
 
@@ -34,9 +32,8 @@ Aqui estão algumas screenshots do aplicativo:
 
 | | | |
 |---|---|---|
-| <img src="https://github.com/KrodrigoDev/App_SetorShare/assets/126525471/c2223e00-226d-47a3-9f23-9529990280de" alt="Layout Inicial" width="300"> | <img src="screenshots/screenshot2.png" alt="Screenshot 2" width="300" height="200"> | <img src="screenshots/screenshot3.png" alt="Screenshot 3" width="300" height="200"> |
-| *Descrição da imagem do layout inicial.* | *Descrição da imagem da Screenshot 2* | *Descrição da imagem da Screenshot 3* |
-
+| <img src="https://github.com/KrodrigoDev/App_SetorShare/assets/126525471/2b4d0be1-dcc4-4ba0-8ce2-e9004ac3ea1b" alt="Layout Inicial" width="300"> | <img src="https://github.com/KrodrigoDev/App_SetorShare/assets/126525471/946afec8-edd4-4a23-bf58-58ededcdaef0" alt="Screenshot 2" width="300"> | <img src="https://github.com/KrodrigoDev/App_SetorShare/assets/126525471/415f24c2-e3bd-459a-b17c-b5db94014d93" alt="Screenshot 3" width="300"> |
+| *Activity Principal.* | *Detalhes do Pedido* | *Criar um Pedido* |
 
 ## Contribuição 🤝
 
