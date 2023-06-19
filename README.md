@@ -27,10 +27,18 @@ O SetorShare foi desenvolvido com base em um esboço inicial em alta fidelidade.
 Para visualizar o esboço completo dessa versão inicial do SetorShare, incluindo todas as telas e elementos de interface, acesse o projeto no Figma [aqui](https://www.figma.com/file/xTYVIMQ5oblGzLNFRwGM3E/Projeto_Almox_Kau%C3%A3?type=design&node-id=0-1&t=JRXm61IHqq8qjSb2-0).
 
 ## Screenshots 📷
-| | | |
-|---|---|---|
-| <img src="https://github.com/KrodrigoDev/App_SetorShare/assets/126525471/2b4d0be1-dcc4-4ba0-8ce2-e9004ac3ea1b" alt="Layout Inicial" width="300"> | <img src="https://github.com/KrodrigoDev/App_SetorShare/assets/126525471/946afec8-edd4-4a23-bf58-58ededcdaef0" alt="Screenshot 2" width="300"> | <img src="https://github.com/KrodrigoDev/App_SetorShare/assets/126525471/415f24c2-e3bd-459a-b17c-b5db94014d93" alt="Screenshot 3" width="300"> |
-| *Activity Principal.* | *Detalhes do Pedido* | *Criar um Pedido* |
+
+<div align="center">
+  <div style="float: left; margin-right: 50px; text-align: center;">
+    <img src="https://github.com/KrodrigoDev/SetorShare/assets/126525471/d3c30157-fe0e-4aa5-acce-7d8d91e5e621" alt="Layout Inicial" width="300">
+    <p>Descrição do Layout Inicial</p>
+  </div>
+  <div style="float: left; margin-left: 50px; text-align: center;">
+    <img src="https://github.com/KrodrigoDev/SetorShare/assets/126525471/f3e6f8d8-1095-4993-a5bc-a034f676c00c" alt="Screenshot 2" width="300">
+    <p>Descrição da Screenshot 2</p>
+  </div>
+  <div style="clear: both;"></div>
+</div>
 
 ## Contribuição 🤝
 
