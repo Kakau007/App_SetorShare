@@ -34,7 +34,7 @@ Aqui estão algumas screenshots do aplicativo:
 
 | | | |
 |---|---|---|
-| <img src="https://github.com/KrodrigoDev/App_SetorShare/assets/126525471/c2223e00-226d-47a3-9f23-9529990280de" alt="Layout Inicial" width="250" height="500"> | <img src="screenshots/screenshot2.png" alt="Screenshot 2" width="300" height="200"> | <img src="screenshots/screenshot3.png" alt="Screenshot 3" width="300" height="200"> |
+| <img src="https://github.com/KrodrigoDev/App_SetorShare/assets/126525471/c2223e00-226d-47a3-9f23-9529990280de" alt="Layout Inicial" width="300"> | <img src="screenshots/screenshot2.png" alt="Screenshot 2" width="300" height="200"> | <img src="screenshots/screenshot3.png" alt="Screenshot 3" width="300" height="200"> |
 | *Descrição da imagem do layout inicial.* | *Descrição da imagem da Screenshot 2* | *Descrição da imagem da Screenshot 3* |
 
 
