@@ -20,7 +20,7 @@ O SetorShare é uma solução inovadora para o compartilhamento de recursos entr
 
 - **Redução da Dependência de Aplicativos de Mensagens:** Ao centralizar as solicitações internas no SetorShare, evita-se a fragmentação das informações em várias plataformas de mensagens.
 
-## Esboço do Layout em Alta Fidelidade (Versão Inicial) 🎨
+## Layout em Alta Fidelidade (Versão Inicial) 🎨
 
 O SetorShare foi desenvolvido com base em um esboço inicial em alta fidelidade. Tenha em mente que o design, as funcionalidades e a aparência do aplicativo podem ter evoluído desde então.
 
