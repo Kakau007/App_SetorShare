@@ -27,18 +27,16 @@ O SetorShare foi desenvolvido com base em um esboço inicial em alta fidelidade.
 Para visualizar o esboço completo dessa versão inicial do SetorShare, incluindo todas as telas e elementos de interface, acesse o projeto no Figma [aqui](https://www.figma.com/file/xTYVIMQ5oblGzLNFRwGM3E/Projeto_Almox_Kau%C3%A3?type=design&node-id=0-1&t=JRXm61IHqq8qjSb2-0).
 
 ## Screenshots 📷
-
 <div align="center">
-  <div style="float: left; margin-right: 50px; text-align: center;">
-    <img src="https://github.com/KrodrigoDev/SetorShare/assets/126525471/d3c30157-fe0e-4aa5-acce-7d8d91e5e621" alt="Layout Inicial" width="300">
-    <p>Descrição do Layout Inicial</p>
-  </div>
-  <div style="float: left; margin-left: 50px; text-align: center;">
-    <img src="https://github.com/KrodrigoDev/SetorShare/assets/126525471/f3e6f8d8-1095-4993-a5bc-a034f676c00c" alt="Screenshot 2" width="300">
-    <p>Descrição da Screenshot 2</p>
-  </div>
-  <div style="clear: both;"></div>
+  
+  | | |
+  |---|---|
+  | <img src="https://github.com/KrodrigoDev/SetorShare/assets/126525471/d3c30157-fe0e-4aa5-acce-7d8d91e5e621" alt="Layout Inicial" width="300"> | <img src="https://github.com/KrodrigoDev/SetorShare/assets/126525471/f3e6f8d8-1095-4993-a5bc-a034f676c00c" alt="Screenshot 2" width="300"> |
+  |Gif da Tela Inicial | Gif da Solicitação de Pedido |
+  
 </div>
+
+  
 
 ## Contribuição 🤝
 
