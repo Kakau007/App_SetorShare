@@ -17,7 +17,7 @@ public class Pedido implements Serializable {
     private String quantidade;
     private String descricao;
 
-    private String data;
+    private String dataAtual;
 
     private List<String> fotos;
 
@@ -152,11 +152,12 @@ public class Pedido implements Serializable {
 
 
     public String getData() {
-        return data;
+        return dataAtual;
     }
 
     public void setData(String data) {
-        this.data = data;
+        this.dataAtual = data;
     }
+
 
 }

@@ -36,7 +36,9 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 
@@ -174,6 +176,11 @@ public class CadastrarPedidosActivity extends AppCompatActivity implements View.
     }
 
     private Pedido configurarPedido(){
+
+        // Obter a data atual do sistema
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dataAtual = dateFormat.format(new Date());
+
         String setor = campoSetor.getSelectedItem().toString();
         String categoria = campoCategoria.getSelectedItem().toString();
         String nome = campoNome.getText().toString();
@@ -189,6 +196,8 @@ public class CadastrarPedidosActivity extends AppCompatActivity implements View.
         pedido.setCodigo(codigo);
         pedido.setQuantidade(quantidade);
         pedido.setDescricao(descricao);
+
+        pedido.setData(dataAtual);
 
 
 

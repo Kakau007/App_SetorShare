@@ -165,6 +165,36 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textdataatual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data da Criação:"
+                android:textColor="#3A3A3A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDataAtualdeta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:text="00/00/0000"
+                android:textColor="#8F8F8F"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -229,6 +259,7 @@
                 android:layout_weight="1"
                 android:onClick="abrirEmailNoGmail"
                 android:text="E-mail" />
+
         </LinearLayout>
     </LinearLayout>
 

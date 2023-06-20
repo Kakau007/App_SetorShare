@@ -40,6 +40,8 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
 
     private Pedido pedidoSelecionado;
 
+    private TextView dataAtual;
+
 
 
 
@@ -61,6 +63,7 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
             codigo.setText(pedidoSelecionado.getCodigo());
             setor.setText(pedidoSelecionado.getSetor());
             descricao.setText(pedidoSelecionado.getDescricao());
+            dataAtual.setText(pedidoSelecionado.getData());
 
 
             ImageListener imageListener = new ImageListener() {
@@ -116,15 +119,11 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
         String emailDestino = "kauanrodrigoo25@gmail.com"; // Endereço de e-mail de destino
         String assuntoBase = "Compartilhamento entre setores ";
 
-        // Obter a data atual
-        Date dataAtual = new Date();
+        // Obter a data do pedido do objeto Pedido
+        String dataPedido = pedidoSelecionado.getData();
 
-        // Formatar a data no formato desejado
-        SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
-        String dataFormatada = formatoData.format(dataAtual);
-
-        // Concatenar o assunto base com a data formatada
-        String assunto = assuntoBase + dataFormatada;
+        // Concatenar o assunto base com a data do pedido
+        String assunto = assuntoBase + dataPedido;
 
         // Extrair informações do pedido
         String setorSolicitante = pedidoSelecionado.getSetor();
@@ -134,15 +133,12 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
         // Montar o corpo do e-mail
         StringBuilder corpo = new StringBuilder();
         corpo.append("Olá, tudo bem?\n\n");
-        corpo.append("Este e-mail é um registro da solicitação realizada na data ").append(dataFormatada).append(".\n\n");
+        corpo.append("Este e-mail é um registro da solicitação realizada na data ").append(dataPedido).append(".\n\n");
         corpo.append("Setor Solicitante: ").append(setorSolicitante).append("\n");
         corpo.append("Quantidade: ").append(quantidade).append("\n");
         corpo.append("Código do Material: ").append(codigoMaterial).append("\n\n");
         corpo.append("Atenciosamente,\nSetorShare\n\n");
         corpo.append("Desenvolvido por Kauã Rodrigo");
-
-
-
 
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
@@ -162,10 +158,6 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
 
 
 
-
-
-
-
     public void inicializarComponentes(){
         carouselView = findViewById(R.id.carouselView);
         nome = findViewById(R.id.textNomeDetalhes);
@@ -173,6 +165,7 @@ public class DetalhesPedidosActivity extends AppCompatActivity {
         codigo = findViewById(R.id.textCodigoDetalhes);
         setor = findViewById(R.id.textSetorDetalhes);
         descricao = findViewById(R.id.textDescricaoDetalhes);
+        dataAtual = findViewById(R.id.textDataAtualdeta);
 
 
     }
