@@ -2,7 +2,7 @@
 
 ## Sobre o Aplicativo 📲
 
-O SetorShare é uma solução inovadora para o compartilhamento de recursos entre os almoxarifados de uma empresa. Ele foi projetado para superar os desafios e a falta de rastreabilidade enfrentados ao utilizar aplicativos de mensagens para solicitações internas. Com uma plataforma centralizada e eficiente, o SetorShare proporciona uma comunicação interna ágil e possibilita a propagação rápida de informações sobre as solicitações de itens.
+O SetorShare é uma solução para o compartilhamento de recursos entre os almoxarifados de uma empresa. Ele foi projetado para superar os desafios e a falta de rastreabilidade enfrentados ao utilizar aplicativos de mensagens para solicitações internas. Com uma plataforma centralizada e eficiente, o SetorShare proporciona uma comunicação interna ágil e possibilita a propagação rápida de informações sobre as solicitações de itens.
 
 ## Funcionalidades Principais 🚀
 
